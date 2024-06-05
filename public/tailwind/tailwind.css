@@ -288,7 +288,7 @@
       @apply desktop:sticky desktop:left-0 desktop:top-0 z-[20];
     }
     .menu {
-      @apply desktop:flex desktop:flex-row desktop:items-center desktop:justify-center desktop:h-[100px] desktop:bg-[url('../images/header/heder-background.png')] desktop:pt-[2em] desktop:pb-[0.5em] desktop:box-border desktop:text-[16px];
+      @apply flex flex-row items-center justify-center h-[100px] bg-[url('../images/header/heder-background.png')] pt-[2em] pb-[0.5em] box-border text-[16px];
     }
     .menuContainer {
       @apply desktop:flex desktop:flex-row desktop:items-center desktop:justify-start desktop:w-[75%];

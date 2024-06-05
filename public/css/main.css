@@ -1476,20 +1476,22 @@ video {
       left: 0px;
       top: 0px;
     }
+  }
 
-    .menu {
-      box-sizing: border-box;
-      display: flex;
-      height: 100px;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      background-image: url('../images/header/heder-background.png');
-      padding-top: 2em;
-      padding-bottom: 0.5em;
-      font-size: 16px;
-    }
+  .menu {
+    box-sizing: border-box;
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/header/heder-background.png');
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    font-size: 16px;
+  }
 
+  @media (min-width: 1000px) {
     .menuContainer {
       display: flex;
       width: 75%;
