@@ -616,7 +616,8 @@ video {
 }
 
 .menu__item {
-  flex-direction: row;
+  position: relative;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-left-width: 1px;
@@ -648,6 +649,34 @@ video {
 @media (prefers-color-scheme: dark) {
   .menu__item {
     color: var(--color-menuText);
+  }
+}
+
+.subMenu {
+  position: absolute;
+  top: 100%;
+  height: auto;
+  width: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  background-image: url('../images/header/heder-background.png');
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 340px) {
+  .subMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .subMenu {
+    display: none;
   }
 }
 
@@ -1853,14 +1882,8 @@ video {
   --color-magBg: #0b3856;
 }
 
-@media (min-width: 340px) {
-  .mobile\:h-\[200px\] {
-    height: 200px;
-  }
-
-  .mobile\:w-\[200px\] {
-    width: 200px;
-  }
+.group:hover .group-hover\:flex {
+  display: flex;
 }
 
 @media (prefers-color-scheme: dark) {

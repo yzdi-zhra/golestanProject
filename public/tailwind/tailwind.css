@@ -43,7 +43,11 @@
     @apply desktop:flex desktop:flex-row desktop:items-center desktop:justify-start desktop:w-[75%] mobile:hidden;
   }
   .menu__item {
-    @apply desktop:flex flex-row items-center justify-center border-l-[1px] border-l-[#AFB2B4] text-gray-300 px-[20px] hover:text-white  dark:text-[--color-menuText] mobile:hidden;
+    @apply desktop:flex flex-col items-center justify-center border-l-[1px] border-l-[rgb(175,178,180)] text-gray-300 px-[20px] hover:text-white  dark:text-[--color-menuText] mobile:hidden relative ; 
+  }
+  .subMenu{
+    @apply mobile:hidden desktop:hidden flex-col w-[200px] h-auto items-start justify-start  px-[20px] py-[10px]
+    bg-[url('../images/header/heder-background.png')] absolute top-[100%] gap-[10px];
   }
   .logoContainer {
     @apply flex flex-row desktop:w-[25%] desktop:h-[100px] items-center justify-center desktop:relative mobile:w-[100%] mobile:h-[180px] ;
